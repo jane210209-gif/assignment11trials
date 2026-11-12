@@ -1,86 +1,121 @@
 // MOBILE NAVIGATION
 
-const menu = document.getElementById('menu');
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 
-const navLinks = document.getElementById('navLinks');
+menuBtn.addEventListener("click", () => {
 
+    navLinks.classList.toggle("active");
 
-menu.addEventListener('click', () => {
-
-    const open = navLinks.classList.toggle('open');
-
-    menu.setAttribute('aria-expanded', String(open));
-
-    menu.textContent = open ? '×' : '☰';
+    menuBtn.textContent =
+        navLinks.classList.contains("active") ? "✕" : "☰";
 
 });
 
 
 // CLOSE MENU AFTER CLICKING A LINK
 
-document.querySelectorAll('#navLinks a').forEach(link => {
+document.querySelectorAll(".nav-links a").forEach(link => {
 
-    link.addEventListener('click', () => {
+    link.addEventListener("click", () => {
 
-        navLinks.classList.remove('open');
-
-        menu.setAttribute('aria-expanded', 'false');
-
-        menu.textContent = '☰';
+        navLinks.classList.remove("active");
+        menuBtn.textContent = "☰";
 
     });
 
 });
 
 
-// AUTOMATIC FOOTER YEAR
+// TYPING ANIMATION
 
-document.getElementById('year').textContent =
-    new Date().getFullYear();
+const words = [
+    "Artificial Intelligence.",
+    "Machine Learning.",
+    "Robotics.",
+    "Internet of Things."
+];
+
+let wordIndex = 0;
+let characterIndex = 0;
+let deleting = false;
+
+const typingElement = document.getElementById("typing");
+
+function typeEffect() {
+
+    const currentWord = words[wordIndex];
+
+    if (!deleting) {
+
+        typingElement.textContent =
+            currentWord.substring(0, characterIndex + 1);
+
+        characterIndex++;
+
+        if (characterIndex === currentWord.length) {
+
+            deleting = true;
+
+            setTimeout(typeEffect, 1200);
+            return;
+
+        }
+
+    } else {
+
+        typingElement.textContent =
+            currentWord.substring(0, characterIndex - 1);
+
+        characterIndex--;
+
+        if (characterIndex === 0) {
+
+            deleting = false;
+
+            wordIndex = (wordIndex + 1) % words.length;
+
+        }
+
+    }
+
+    setTimeout(typeEffect, deleting ? 45 : 90);
+
+}
+
+typeEffect();
+
+
+// LUCIDE ICONS
+
+lucide.createIcons();
 
 
 // SCROLL REVEAL ANIMATION
 
-const items = document.querySelectorAll(
-    '.heading, .about-grid, .card, .project, .achievement-list>div, .contact-links'
-);
+const observer = new IntersectionObserver((entries) => {
 
+    entries.forEach(entry => {
 
-if ('IntersectionObserver' in window) {
+        if (entry.isIntersecting) {
 
-    const observer = new IntersectionObserver((entries, obs) => {
+            entry.target.classList.add("show");
 
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add('visible');
-
-                obs.unobserve(entry.target);
-
-            }
-
-        });
-
-    }, {
-        threshold: 0.12
-    });
-
-
-    items.forEach(item => {
-
-        item.classList.add('reveal');
-
-        observer.observe(item);
+        }
 
     });
 
-} else {
+}, {
+    threshold: 0.12
+});
 
-    items.forEach(item => {
 
-        item.classList.add('visible');
+document.querySelectorAll(
+    ".section-heading, .about-text, .education-card, .interest-card, .skill-box, .project-card, .achievement-card, .contact-card"
+).forEach(element => {
 
-    });
+    element.classList.add("reveal");
 
-}
+    observer.observe(element);
+
+});
