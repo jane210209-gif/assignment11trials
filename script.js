@@ -13,7 +13,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-// CLOSE MENU AFTER CLICKING A LINK
+// CLOSE MOBILE MENU
 
 document.querySelectorAll(".nav-links a").forEach(link => {
 
@@ -27,71 +27,12 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 
-// TYPING ANIMATION
-
-const words = [
-    "Artificial Intelligence.",
-    "Machine Learning.",
-    "Robotics.",
-    "Internet of Things."
-];
-
-let wordIndex = 0;
-let characterIndex = 0;
-let deleting = false;
-
-const typingElement = document.getElementById("typing");
-
-function typeEffect() {
-
-    const currentWord = words[wordIndex];
-
-    if (!deleting) {
-
-        typingElement.textContent =
-            currentWord.substring(0, characterIndex + 1);
-
-        characterIndex++;
-
-        if (characterIndex === currentWord.length) {
-
-            deleting = true;
-
-            setTimeout(typeEffect, 1200);
-            return;
-
-        }
-
-    } else {
-
-        typingElement.textContent =
-            currentWord.substring(0, characterIndex - 1);
-
-        characterIndex--;
-
-        if (characterIndex === 0) {
-
-            deleting = false;
-
-            wordIndex = (wordIndex + 1) % words.length;
-
-        }
-
-    }
-
-    setTimeout(typeEffect, deleting ? 45 : 90);
-
-}
-
-typeEffect();
-
-
 // LUCIDE ICONS
 
 lucide.createIcons();
 
 
-// SCROLL REVEAL ANIMATION
+// SCROLL REVEAL
 
 const observer = new IntersectionObserver((entries) => {
 
@@ -100,6 +41,8 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
 
             entry.target.classList.add("show");
+
+            observer.unobserve(entry.target);
 
         }
 
@@ -111,11 +54,44 @@ const observer = new IntersectionObserver((entries) => {
 
 
 document.querySelectorAll(
-    ".section-heading, .about-text, .education-card, .interest-card, .skill-box, .project-card, .achievement-card, .contact-card"
+    ".section-intro, .about-main, .education-panel, .interest-item, .skill-group, .project, .achievement-item, .contact-inner"
 ).forEach(element => {
 
     element.classList.add("reveal");
 
     observer.observe(element);
+
+});
+
+
+// ACTIVE NAVIGATION
+
+const sections = document.querySelectorAll("main section[id]");
+
+const navItems = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 150;
+
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navItems.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+
+    });
 
 });
