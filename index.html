@@ -5,31 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Portfolio of Kothapally Sri Charan, a first-year B.Tech student.">
+    <title>Naini Jeshwanth Sinha | AI/ML Developer</title>
 
-    <title>Kothapally Sri Charan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="header">
-        <nav class="nav wrap">
+    <!-- NAVBAR -->
 
-            <a class="logo" href="#home">CS<span>.</span></a>
+    <header>
+        <nav class="navbar">
 
-            <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">
-                ☰
-            </button>
+            <a href="#home" class="logo">NJS<span>.</span></a>
 
-            <ul id="navLinks">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -37,504 +36,544 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
+            <a href="#contact" class="nav-button">Let's Connect ↗</a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+                ☰
+            </button>
+
         </nav>
     </header>
 
 
-    <main>
+    <!-- HOME SECTION -->
 
-        <!-- HOME SECTION -->
-        <section class="hero wrap" id="home">
+    <section id="home" class="hero">
 
-            <div>
+        <div class="hero-content">
 
-                <p class="eyebrow">B.TECH STUDENT · FIRST YEAR</p>
+            <div class="availability">
+                <span class="dot"></span>
+                B.Tech Student | AI & ML Enthusiast
+            </div>
 
-                <h1>
-                    Kothapally<br>
-                    <span>Sri Charan.</span>
-                </h1>
+            <p class="hello">HELLO, I'M</p>
 
-                <h2>
-                    Curious about technology. Focused on learning.
-                    Interested in building useful digital experiences.
-                </h2>
+            <h1>
+                Naini Jeshwanth
+                <span>Sinha.</span>
+            </h1>
 
-                <p class="muted">
-                    I’m a first-year engineering student developing my
-                    foundation in technology and exploring how ideas
-                    can become practical solutions. I enjoy learning
-                    by doing and growing through new challenges.
+            <h2>
+                Exploring the world of
+                <span id="typing"></span>
+            </h2>
+
+            <p class="hero-description">
+                A Computer Science and Engineering student at Joy University,
+                passionate about Artificial Intelligence, Robotics, IoT
+                and building technology-driven solutions.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="primary-btn">
+                    Explore My Work ↗
+                </a>
+
+                <a href="#contact" class="secondary-btn">
+                    Get In Touch
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/Jeshwanth-cyber"
+                    target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+                <a href="https://www.linkedin.com/in/jeshwanth-sinha-undefined-1ba9a1420/"
+                    target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
+                <a href="mailto:nainipandu3@gmail.com">Email ↗</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="profile-card">
+
+                <div class="card-top">
+                    <span class="card-dot"></span>
+                    <span>TECH PROFILE</span>
+                </div>
+
+                <div class="profile-icon">
+                    <i data-lucide="brain-circuit"></i>
+                </div>
+
+                <h3>AI/ML Explorer</h3>
+
+                <p>Learning. Building. Innovating.</p>
+
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>AI/ML</span>
+                    <span>IoT</span>
+                </div>
+
+                <div class="card-footer">
+                    <span>JOY UNIVERSITY</span>
+                    <span>2026</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="section">
+
+        <div class="section-heading">
+            <p class="section-label">01 / ABOUT ME</p>
+            <h2>Getting to Know <span>Me</span></h2>
+            <p>A little about my journey, interests and aspirations.</p>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <h3>Curiosity drives innovation.</h3>
+
+                <p>
+                    I am Naini Jeshwanth Sinha, a first-year B.Tech student
+                    pursuing Computer Science and Engineering with a
+                    specialization in Artificial Intelligence and Machine
+                    Learning at Joy University.
                 </p>
 
-                <div class="actions">
-
-                    <a class="btn" href="#projects">
-                        Explore projects ↗
-                    </a>
-
-                    <a class="plain-link" href="#contact">
-                        Get in touch →
-                    </a>
-
-                </div>
-
-                <div class="social">
-
-                    <a href="https://github.com/charankotthapally-sys"
-                        target="_blank" rel="noopener noreferrer">
-                        GitHub ↗
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/charan-k-10521640a"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn ↗
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <aside class="profile">
-
-                <small>
-                    PROFILE
-                    <span class="online">● Learning & building</span>
-                </small>
-
-                <div class="monogram">CS</div>
-
-                <h3>Kothapally Sri Charan</h3>
-
-                <p>B.Tech · First Year</p>
-
-                <hr>
-
-                <div class="profile-row">
-                    <span>Currently</span>
-                    <b>Building my foundation</b>
-                </div>
-
-                <div class="profile-row">
-                    <span>Interests</span>
-                    <b>Technology & development</b>
-                </div>
-
-                <div class="profile-row">
-                    <span>Approach</span>
-                    <b>Learn · Build · Improve</b>
-                </div>
-
-            </aside>
-
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-        <section class="section pale" id="about">
-
-            <div class="wrap">
-
-                <div class="heading">
-
-                    <p class="eyebrow">01 — INTRODUCTION</p>
-
-                    <h2>A little about <span>me.</span></h2>
-
-                    <p class="muted">
-                        A student at the beginning of an exciting
-                        engineering journey.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div>
-
-                        <h3>Learning with purpose.</h3>
-
-                        <p>
-                            I am Kothapally Sri Charan, a first-year
-                            B.Tech student interested in exploring
-                            the world of technology. I’m using this
-                            stage of my academic journey to strengthen
-                            my fundamentals, discover areas that
-                            interest me, and gain experience through
-                            hands-on work.
-                        </p>
-
-                        <p>
-                            My current goal is to become a confident
-                            problem-solver, build a strong technical
-                            foundation, and gradually develop the
-                            skills needed to contribute to meaningful
-                            software projects.
-                        </p>
-
-                    </div>
-
-
-                    <div class="facts">
-
-                        <div>
-                            <span>Education</span>
-                            <b>Bachelor of Technology</b>
-                            <small>First-year student</small>
-                        </div>
-
-                        <div>
-                            <span>Learning focus</span>
-                            <b>Programming & technology</b>
-                            <small>Building core foundations</small>
-                        </div>
-
-                        <div>
-                            <span>Career direction</span>
-                            <b>Software & technology</b>
-                            <small>Exploring future opportunities</small>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS SECTION -->
-        <section class="section" id="skills">
-
-            <div class="wrap">
-
-                <div class="heading">
-
-                    <p class="eyebrow">02 — CAPABILITIES</p>
-
-                    <h2>Skills & <span>learning.</span></h2>
-
-                    <p class="muted">
-                        A growing toolkit, shaped through study and practice.
-                    </p>
-
-                </div>
-
-
-                <div class="cards three">
-
-                    <article class="card">
-
-                        <span class="number">01</span>
-
-                        <div class="symbol">⌘</div>
-
-                        <h3>Programming</h3>
-
-                        <p>
-                            Developing programming fundamentals
-                            and learning to approach problems logically.
-                        </p>
-
-                        <label>Replace with languages you know</label>
-
-                    </article>
-
-
-                    <article class="card">
-
-                        <span class="number">02</span>
-
-                        <div class="symbol">▧</div>
-
-                        <h3>Technical skills</h3>
-
-                        <p>
-                            Exploring software development concepts
-                            and practical ways to turn ideas into projects.
-                        </p>
-
-                        <label>Add your technical skills</label>
-
-                    </article>
-
-
-                    <article class="card">
-
-                        <span class="number">03</span>
-
-                        <div class="symbol">✳</div>
-
-                        <h3>Tools & strengths</h3>
-
-                        <p>
-                            Building a consistent learning routine,
-                            collaborating, and improving through feedback.
-                        </p>
-
-                        <label>Add tools you use</label>
-
-                    </article>
-
-                </div>
-
-                <p class="note">
-                    Your specific programming languages, technical skills,
-                    and tools have not been provided yet. Update these
-                    cards before submitting.
+                <p>
+                    I am passionate about exploring emerging technologies
+                    and developing innovative solutions to real-world
+                    challenges. My interests include Artificial Intelligence,
+                    Machine Learning, Robotics, Internet of Things (IoT),
+                    and web development.
+                </p>
+
+                <p>
+                    I enjoy experimenting with technology, learning new
+                    programming concepts and building projects that combine
+                    creativity with practical applications.
+                </p>
+
+                <p>
+                    My goal is to continuously strengthen my technical
+                    knowledge and contribute to meaningful technological
+                    innovations.
                 </p>
 
             </div>
 
-        </section>
 
+            <div class="education-card">
 
-        <!-- PROJECTS SECTION -->
-        <section class="section pale" id="projects">
-
-            <div class="wrap">
-
-                <div class="heading">
-
-                    <p class="eyebrow">03 — SELECTED WORK</p>
-
-                    <h2>Projects in <span>practice.</span></h2>
-
-                    <p class="muted">
-                        A place to showcase work, experiments,
-                        and what each experience taught you.
-                    </p>
-
+                <div class="education-icon">
+                    <i data-lucide="graduation-cap"></i>
                 </div>
 
+                <p class="section-label">EDUCATION</p>
 
-                <div class="cards two">
+                <h3>Bachelor of Technology</h3>
 
+                <h4>Computer Science & Engineering</h4>
 
-                    <!-- PROJECT 1 -->
-                    <article class="project">
+                <p>Artificial Intelligence & Machine Learning</p>
 
-                        <div class="project-art art-one">
-                            Skill<br>
-                            Path<span>.</span>
-                        </div>
+                <div class="education-divider"></div>
 
-                        <div class="project-content">
-
-                            <label>PROJECT 01 · REPOSITORY</label>
-
-                            <h3>SkillPath</h3>
-
-                            <p>
-                                A project repository shared for this portfolio.
-                                Add a short explanation of its purpose,
-                                the features you worked on, and your
-                                individual contribution before publishing.
-                            </p>
-
-                            <a href="https://github.com/sathvik06767-svg/skillpath"
-                                target="_blank" rel="noopener noreferrer">
-                                View repository ↗
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 2 -->
-                    <article class="project">
-
-                        <div class="project-art art-two">
-                            Next<br>
-                            Project<span>.</span>
-                        </div>
-
-                        <div class="project-content">
-
-                            <label>PROJECT 02 · TO BE ADDED</label>
-
-                            <h3>Second project</h3>
-
-                            <p>
-                                Add a genuine academic or personal project.
-                                Explain what it does, the problem it addresses,
-                                and the technologies you used.
-                            </p>
-
-                            <span class="coming">
-                                Project details to be added
-                            </span>
-
-                        </div>
-
-                    </article>
-
+                <div class="education-details">
+                    <span>University</span>
+                    <strong>Joy University</strong>
                 </div>
 
-                <p class="note">
-                    Confirm your contribution to the SkillPath repository
-                    before presenting it as your own work. Add a real
-                    second project to meet the assignment requirement.
+                <div class="education-details">
+                    <span>Academic Year</span>
+                    <strong>First Year</strong>
+                </div>
+
+                <div class="education-details">
+                    <span>Specialization</span>
+                    <strong>AI & ML</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERESTS -->
+
+    <section class="interests-section">
+
+        <div class="section-heading">
+            <p class="section-label">MY INTERESTS</p>
+            <h2>What Excites <span>Me</span></h2>
+        </div>
+
+        <div class="interest-grid">
+
+            <div class="interest-card">
+                <i data-lucide="brain-circuit"></i>
+                <h3>Artificial Intelligence</h3>
+                <p>Exploring intelligent systems and AI-powered solutions.</p>
+            </div>
+
+            <div class="interest-card">
+                <i data-lucide="bot"></i>
+                <h3>Robotics</h3>
+                <p>Interested in intelligent machines and automation.</p>
+            </div>
+
+            <div class="interest-card">
+                <i data-lucide="cpu"></i>
+                <h3>Internet of Things</h3>
+                <p>Exploring connected devices and smart technologies.</p>
+            </div>
+
+            <div class="interest-card">
+                <i data-lucide="workflow"></i>
+                <h3>AI Workflows</h3>
+                <p>Interested in intelligent automation and workflows.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills" class="section">
+
+        <div class="section-heading">
+
+            <p class="section-label">02 / MY SKILLS</p>
+
+            <h2>Tools & <span>Technologies</span></h2>
+
+            <p>Technologies I currently work with and continue to explore.</p>
+
+        </div>
+
+
+        <div class="skills-container">
+
+            <div class="skill-box">
+
+                <div class="skill-icon">
+                    <i data-lucide="code-2"></i>
+                </div>
+
+                <h3>Programming Languages</h3>
+
+                <div class="skill-list">
+                    <span>Python</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <div class="skill-icon">
+                    <i data-lucide="monitor"></i>
+                </div>
+
+                <h3>Web Technologies</h3>
+
+                <div class="skill-list">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <div class="skill-icon">
+                    <i data-lucide="lightbulb"></i>
+                </div>
+
+                <h3>Areas of Interest</h3>
+
+                <div class="skill-list">
+                    <span>AI & ML</span>
+                    <span>Robotics</span>
+                    <span>IoT</span>
+                    <span>Automation</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects" class="section projects-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">03 / MY PROJECTS</p>
+
+            <h2>Things I've <span>Built</span></h2>
+
+            <p>Exploring ideas and turning them into technology-driven projects.</p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-number">PROJECT 01</div>
+
+                <div class="project-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+
+                <h3>Aegis Voice</h3>
+
+                <p class="project-category">
+                    Digital Safety | Privacy Technology
                 </p>
 
-            </div>
+                <p class="project-description">
+                    A privacy-first digital safety web application designed
+                    to support victims of AI-generated deepfakes,
+                    particularly non-consensual intimate imagery,
+                    and multilingual online harassment.
 
-        </section>
+                    The project focuses on digital safety, privacy
+                    protection and creating safer online spaces.
+                </p>
 
-
-        <!-- ACHIEVEMENTS SECTION -->
-        <section class="section" id="achievements">
-
-            <div class="wrap">
-
-                <div class="heading">
-
-                    <p class="eyebrow">04 — EXPERIENCE</p>
-
-                    <h2>
-                        Achievements & <span>involvement.</span>
-                    </h2>
-
-                    <p class="muted">
-                        Certifications, recognition, workshops, and milestones.
-                    </p>
-
+                <div class="project-tags">
+                    <span>AI Safety</span>
+                    <span>Privacy</span>
+                    <span>Web Application</span>
                 </div>
 
-
-                <div class="achievement-list">
-
-                    <div>
-
-                        <b>01</b>
-
-                        <section>
-                            <h3>Certifications</h3>
-
-                            <p>
-                                Add completed courses or certifications,
-                                issuing organization, and year.
-                            </p>
-                        </section>
-
-                        <small>To be updated</small>
-
-                    </div>
-
-
-                    <div>
-
-                        <b>02</b>
-
-                        <section>
-                            <h3>Awards & recognition</h3>
-
-                            <p>
-                                Add awards, competition results,
-                                or other recognition, if applicable.
-                            </p>
-                        </section>
-
-                        <small>To be updated</small>
-
-                    </div>
-
-
-                    <div>
-
-                        <b>03</b>
-
-                        <section>
-                            <h3>Participation</h3>
-
-                            <p>
-                                Add hackathons, workshops, seminars,
-                                volunteering, or other relevant participation.
-                            </p>
-                        </section>
-
-                        <small>To be updated</small>
-
-                    </div>
-
-                </div>
+                <a href="https://aegis-voice-frontend-98w9.bolt.host/register"
+                    target="_blank" rel="noopener noreferrer"
+                    class="project-link">
+                    View Project ↗
+                </a>
 
             </div>
 
-        </section>
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-number">PROJECT 02</div>
+
+                <div class="project-icon">
+                    <i data-lucide="workflow"></i>
+                </div>
+
+                <h3>AI Workflows</h3>
+
+                <p class="project-category">
+                    Artificial Intelligence | Automation
+                </p>
+
+                <p class="project-description">
+                    An AI-focused project exploring intelligent
+                    workflows and automation. It aims to simplify
+                    tasks and improve efficiency through the
+                    application of artificial intelligence.
+                </p>
+
+                <div class="project-tags">
+                    <span>Artificial Intelligence</span>
+                    <span>Automation</span>
+                    <span>Workflows</span>
+                </div>
+
+                <span class="project-link">
+                    Project Details Coming Soon
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-        <!-- CONTACT SECTION -->
-        <section class="contact pale" id="contact">
+    <!-- ACHIEVEMENTS -->
 
-            <div class="wrap contact-grid">
+    <section id="achievements" class="section">
+
+        <div class="section-heading">
+
+            <p class="section-label">04 / ACHIEVEMENTS</p>
+
+            <h2>My Learning <span>Journey</span></h2>
+
+            <p>Every project and learning experience is a step forward.</p>
+
+        </div>
+
+
+        <div class="achievement-container">
+
+            <div class="achievement-card">
+
+                <i data-lucide="award"></i>
 
                 <div>
-
-                    <p class="eyebrow">05 — CONTACT</p>
-
-                    <h2>
-                        Have an idea?<br>
-                        <span>Let's connect.</span>
-                    </h2>
-
-                    <p class="muted">
-                        For professional connections, project discussions,
-                        or learning opportunities, feel free to reach out.
-                    </p>
-
-                </div>
-
-
-                <div class="contact-links">
-
-                    <a href="mailto:charankotthapally@gmail.com">
-                        <span>Email</span>
-                        <b>charankotthapally@gmail.com</b>
-                        ↗
-                    </a>
-
-                    <a href="https://github.com/charankotthapally-sys"
-                        target="_blank" rel="noopener noreferrer">
-                        <span>GitHub</span>
-                        <b>charankotthapally-sys</b>
-                        ↗
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/charan-k-10521640a"
-                        target="_blank" rel="noopener noreferrer">
-                        <span>LinkedIn</span>
-                        <b>Charan K</b>
-                        ↗
-                    </a>
-
+                    <h3>Certifications</h3>
+                    <p>Certifications will be added as I complete them.</p>
                 </div>
 
             </div>
 
-        </section>
 
-    </main>
+            <div class="achievement-card">
+
+                <i data-lucide="trophy"></i>
+
+                <div>
+                    <h3>Awards & Recognition</h3>
+                    <p>Achievements and recognitions will be updated here.</p>
+                </div>
+
+            </div>
+
+
+            <div class="achievement-card">
+
+                <i data-lucide="rocket"></i>
+
+                <div>
+                    <h3>Project Participation</h3>
+                    <p>Building projects and gaining practical experience.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">05 / CONTACT ME</p>
+
+            <h2>Let's Build Something <span>Great.</span></h2>
+
+            <p>
+                Interested in technology, collaboration or exchanging ideas?
+                Feel free to connect!
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <a href="mailto:nainipandu3@gmail.com" class="contact-card">
+
+                <i data-lucide="mail"></i>
+
+                <div>
+                    <h3>Email</h3>
+                    <p>nainipandu3@gmail.com</p>
+                </div>
+
+                <span>↗</span>
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/jeshwanth-sinha-undefined-1ba9a1420/"
+                target="_blank" rel="noopener noreferrer"
+                class="contact-card">
+
+                <i data-lucide="linkedin"></i>
+
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                </div>
+
+                <span>↗</span>
+
+            </a>
+
+
+            <a href="https://github.com/Jeshwanth-cyber"
+                target="_blank" rel="noopener noreferrer"
+                class="contact-card">
+
+                <i data-lucide="github"></i>
+
+                <div>
+                    <h3>GitHub</h3>
+                    <p>Explore my repositories</p>
+                </div>
+
+                <span>↗</span>
+
+            </a>
+
+        </div>
+
+    </section>
 
 
     <!-- FOOTER -->
+
     <footer>
 
-        <div class="wrap footer">
+        <a href="#home" class="logo">NJS<span>.</span></a>
 
-            <a class="logo" href="#home">CS<span>.</span></a>
+        <p>
+            Designed & Developed by Naini Jeshwanth Sinha
+        </p>
 
-            <p>Designed with purpose. Built while learning.</p>
-
-            <small>
-                © <span id="year"></span> Kothapally Sri Charan
-            </small>
-
-        </div>
+        <p class="copyright">
+            © 2026 Naini Jeshwanth Sinha. All Rights Reserved.
+        </p>
 
     </footer>
 
@@ -542,4 +581,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
